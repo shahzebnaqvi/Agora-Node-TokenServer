@@ -3,7 +3,7 @@
     "description": "An example of a simple Node/Express server that generates tokens for Agora applications",
     "logo": "https://www.agora.io/en/wp-content/themes/agora-2020/images/agora-logo.svg",
     "website": "https://www.agora.io",
-    "repository": "https://github.com/AgoraIO-Community/Agora-Node-TokenServer",
+    "repository": "https://github.com/shahzebnaqvi/Agora-Node-TokenServer",
     "keywords": ["node", "express", "agora",  "token", "server"],
     "env": {
         "APP_ID": {

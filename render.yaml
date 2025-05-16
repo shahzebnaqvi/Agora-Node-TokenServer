@@ -2,7 +2,7 @@ services:
   - type: web
     name: Agora Token Server
     env: node
-    repo: https://github.com/AgoraIO-Community/Agora-Node-TokenServer.git
+    repo: https://github.com/shahzebnaqvi/Agora-Node-TokenServer.git
     rootDir: .
     buildCommand: npm install
     startCommand: npm start

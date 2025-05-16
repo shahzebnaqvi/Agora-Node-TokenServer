@@ -197,7 +197,7 @@ localhost:8080/rtc/test/subscriber/userAccount/ekaansh
 ```
 
 ## RTM Tokens ##
-We can use the same process to configure a route to generate RTM tokens. You can look at the **`generateRTMToken`** function in the [finished project](https://github.com/AgoraIO-Community/Agora-Node-TokenServer) for generating RTM tokens. The `/rtm` route looks like this, passing in a UID as "1":
+We can use the same process to configure a route to generate RTM tokens. You can look at the **`generateRTMToken`** function in the [finished project](https://github.com/shahzebnaqvi/Agora-Node-TokenServer) for generating RTM tokens. The `/rtm` route looks like this, passing in a UID as "1":
 ```
 localhost:8080/rtm/1
 ```
@@ -206,9 +206,9 @@ The response looks like:
 {"rtmToken":"0062ec0d84c41c4442d88ba6f5a2beb828bIAD9qg4N4hd04MvaY6A72m4BjYmO/7+xnRMinaI0ncLzkAx+f9gAAAAAEACS0zcn9gASXwEAAQCGvRBf"}
 ```
 ## Conclusion ##
-And just like that we are done! In-case you weren’t coding along or want to see the finished product all together you can find it on [GitHub](https://github.com/AgoraIO-Community/Agora-Node-TokenServer). You can deploy it to Heroku in two clicks using the button in the Readme. 
+And just like that we are done! In-case you weren’t coding along or want to see the finished product all together you can find it on [GitHub](https://github.com/shahzebnaqvi/Agora-Node-TokenServer). You can deploy it to Heroku in two clicks using the button in the Readme. 
 
-There's also a version written in Typescript available on the [typescript branch](https://github.com/AgoraIO-Community/Agora-Node-TokenServer/tree/typescript). If you see any room for improvement feel free to fork the repo and make a pull request!
+There's also a version written in Typescript available on the [typescript branch](https://github.com/shahzebnaqvi/Agora-Node-TokenServer/tree/typescript). If you see any room for improvement feel free to fork the repo and make a pull request!
 
 
 ## Other Resources ##
