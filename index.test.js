@@ -27,7 +27,7 @@ describe('Token Generation API', () => {
   });
 
   // Test suite for RTC (Real-Time Communication) token generation
-  describe('GET /rtc/:channel/:role/:tokentype/:uid', () => {
+  describe('GET /rtc/:channel/:tokentype/:uid', () => {
     // Test successful RTC token generation
     it('should generate RTC token with valid parameters', async () => {
       const response = await request(app)

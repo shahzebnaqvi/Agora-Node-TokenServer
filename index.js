@@ -207,7 +207,7 @@ app.options('*', cors());
 
 // Define API endpoints
 app.get('/ping', nocache, ping);
-app.get('/rtc/:channel/:role/:tokentype/:uid', nocache, generateRTCToken); // Endpoint for RTC token generation
+app.get('/rtc/:channel/:tokentype/:uid', nocache, generateRTCToken); // Endpoint for RTC token generation
 app.get('/rtm/:uid/', nocache, generateRTMToken); // Endpoint for RTM token generation
 app.get('/rte/:channel/:role/:tokentype/:uid', nocache, generateRTEToken); // Endpoint for both RTC and RTM token generation
 

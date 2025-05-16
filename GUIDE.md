@@ -76,7 +76,7 @@ const generateRTCToken = (req, resp) => { };
 Let’s define a `GET` endpoint `/rtc`, passing in the **`nochache`** and **`generateRTCToken`** functions.
 
 ```javascript
-app.get('/rtc/:channel/:role/:tokentype/:uid', nocache , generateRTCToken)
+app.get('/rtc/:channel/:tokentype/:uid', nocache , generateRTCToken)
 ```
 You'd notice the route contains `:<path>`, `:` marks the path as a variable, the user can pass in the values like channel name, user role, type of token and user UID to the route and we can access the data in our application.
 

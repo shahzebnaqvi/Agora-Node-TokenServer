@@ -46,7 +46,7 @@ The `rtc` token endpoint requires a `channelName`, `role` ('publisher' or 'audie
 
 **endpoint structure** 
 ```
-/rtc/:channelName/:role/:tokentype/:uid/?expiry=
+/rtc/:channelName/:tokentype/:uid/?expiry=
 ```
 
 response:
