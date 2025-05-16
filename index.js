@@ -59,13 +59,13 @@ const generateRTCToken = (req, resp) => {
   }
   // get role
   let role;
-  if (req.params.role === 'publisher') {
-    role = RtcRole.PUBLISHER;
-  } else if (req.params.role === 'audience') {
+  // if (req.params.role === 'publisher') {
+  //   role = RtcRole.PUBLISHER;
+  // } else if (req.params.role === 'audience') {
     role = RtcRole.SUBSCRIBER;
-  } else {
-    return resp.status(400).json({ error: 'role is incorrect' });
-  }
+  // } else {
+  //   return resp.status(400).json({ error: 'role is incorrect' });
+  // }
   // get the expire time
   let expireTime = req.query.expiry;
   if (!expireTime || expireTime === '') {
@@ -165,13 +165,13 @@ const generateRTEToken = (req, resp) => {
   }
   // get role
   let role;
-  if (req.params.role === 'publisher') {
-    role = RtcRole.PUBLISHER;
-  } else if (req.params.role === 'audience') {
+  // if (req.params.role === 'publisher') {
+  //   role = RtcRole.PUBLISHER;
+  // } else if (req.params.role === 'audience') {
     role = RtcRole.SUBSCRIBER;
-  } else {
-    return resp.status(400).json({ error: 'role is incorrect' });
-  }
+  // } else {
+  //   return resp.status(400).json({ error: 'role is incorrect' });
+  // }
   // get the expire time
   let expireTime = req.query.expiry;
   if (!expireTime || expireTime === '') {
