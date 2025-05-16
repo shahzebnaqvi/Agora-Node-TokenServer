@@ -113,13 +113,13 @@ if (!uid || uid === '') {
 }
 
 let role;
-if (req.params.role === 'publisher') {
-    role = RtcRole.PUBLISHER;
-} else if (req.params.role === 'audience') {
+// if (req.params.role === 'publisher') {
+//     role = RtcRole.PUBLISHER;
+// } else if (req.params.role === 'audience') {
     role = RtcRole.SUBSCRIBER
-} else {
-    return resp.status(500).json({ 'error': 'role is incorrect' });
-}
+// } else {
+//     return resp.status(500).json({ 'error': 'role is incorrect' });
+// }
 ```
 > **Please Note:** Only privilege is enforced by the Agora Platform by default. This is the join channel privilege, to enable the enforcement of other privileges you will need to make a request through [Agora Support](https://agora-ticket.agora.io).
 
