@@ -27,7 +27,7 @@ describe('Token Generation API', () => {
   });
 
   // Test suite for RTC (Real-Time Communication) token generation
-  describe('GET /rtc/:channel/:tokentype/:uid', () => {
+  describe('GET /rtc/:channel/1/:tokentype/:uid', () => {
     // Test successful RTC token generation
     it('should generate RTC token with valid parameters', async () => {
       const response = await request(app)
@@ -81,11 +81,11 @@ describe('Token Generation API', () => {
   });
 
   // Test suite for RTE (Combined RTC and RTM) token generation
-  describe('GET /rte/:channel/:role/:tokentype/:uid', () => {
+  describe('GET /rte/:channel/1/:tokentype/:uid', () => {
     // Test successful generation of both RTC and RTM tokens
     it('should generate both RTC and RTM tokens with valid parameters', async () => {
       const response = await request(app)
-        .get('/rte/test-channel/publisher/uid/1234')
+        .get('/rte/test-channel/uid/1234')
         .query({ expiry: '3600' }); // Tokens expire in 1 hour
 
       expect(response.status).toBe(200);
